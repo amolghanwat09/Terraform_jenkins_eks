@@ -57,7 +57,9 @@ module "sg" {
         cidr_blocks = "0.0.0.0/0"
     }
   ]
-  tags = "Jenkins-sg"
+  tags = {
+    name = "Jenkins-sg"
+  }
 }
 
 #ec2
